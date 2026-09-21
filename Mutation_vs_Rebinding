@@ -1,0 +1,16 @@
+def add_entry(d):
+    d["City"] = "Lucknow"
+
+data = {"Name" : "Priya"}
+add_entry(data)
+
+print("After mutation: ", data)                 #Dictionary Mutation
+
+
+def reassign_dict(d):
+    d["Name"] = "Rahul"
+
+data = {"Name" : "Priya"}
+reassign_dict(data)
+
+print("After rebinding: ", data)                #Dictionary Rebinding
