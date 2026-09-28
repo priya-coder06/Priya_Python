@@ -1,0 +1,16 @@
+def countdown(n):                       #Generator function
+    while n >= 1:
+        yield n
+        n = n - 1
+
+print("Countdown from 5:")
+
+for num in countdown(5):
+    print(num)
+
+#Countdown from 5:
+#5
+#4
+#3
+#2
+#1
