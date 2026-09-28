@@ -1,0 +1,14 @@
+def double_result(func):                    #Decorator function
+    def wrapper(a,b):                       #Wrapper function
+        result = func(a,b)                  
+        return result * 2                   #Double the result of the function
+    return wrapper
+
+@double_result
+def add(a,b):
+    return a + b                            #Addition of two numbers
+
+print("Double of addition of 5 and 10 is:", add(5, 10))
+
+
+#Double of addition of 5 and 10 is: 30
