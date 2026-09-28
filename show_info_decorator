@@ -1,0 +1,18 @@
+def show_info(func):
+    def wrapper(num):
+        print("Calling Function")                   #Calling Function
+        result = func(num)
+        print("Function Executed")                  #Function Executed
+        return result
+    return wrapper
+
+@show_info
+def square(num):
+    return num * num                                #Square of a number
+
+print("Square of 9 is:", square(9))
+
+
+#Calling Function
+#Function Executed
+#Square of 9 is: 81
